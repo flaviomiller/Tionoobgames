@@ -1,0 +1,712 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.022
+extDB3: Windows Debug Version
+
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 4 Cores, Setting up 4 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[02:40:08:512843 -3:00] [Thread 4316] extDB3: Input from Server: 9:VERSION
+[02:40:08:512843 -3:00] [Thread 4316] extDB3: Output to Server: 1.022
+[02:40:39:541618 -3:00] [Thread 4316] extDB3: Input from Server: 9:ADD_DATABASE:altislife
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Output to Server: [1]
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Input from Server: 9:ADD_DATABASE_PROTOCOL:altislife:SQL:8843:TEXT2
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: SQL: Initialized: Add Quotes around TEXT Datatypes mode: 2
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: SQL: Initialized: NULL = ""
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Output to Server: [1]
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Input from Server: 9:LOCK
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Locked
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Output to Server: [1]
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Input from Server: 1:8843:CALL resetLifeVehicles
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Output to Server: 
+[02:40:39:544618 -3:00] [Thread 5040] extDB3: SQL: Trace: Input: CALL resetLifeVehicles
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Input from Server: 1:8843:CALL deleteDeadVehicles
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Output to Server: 
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Input from Server: 1:8843:CALL deleteOldHouses
+[02:40:39:544618 -3:00] [Thread 4316] extDB3: Output to Server: 
+[02:40:39:544618 -3:00] [Thread 2180] extDB3: SQL: Trace: Input: CALL deleteOldHouses
+[02:40:39:545618 -3:00] [Thread 4316] extDB3: Input from Server: 1:8843:CALL deleteOldGangs
+[02:40:39:545618 -3:00] [Thread 4316] extDB3: Output to Server: 
+[02:40:39:545618 -3:00] [Thread 1288] extDB3: SQL: Trace: Input: CALL deleteDeadVehicles
+[02:40:39:545618 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: CALL deleteOldGangs
+[02:40:39:545618 -3:00] [Thread 5040] extDB3: SQL: Trace: Result: [1,[]]
+[02:40:39:548618 -3:00] [Thread 2180] extDB3: SQL: Trace: Result: [1,[]]
+[02:40:39:549618 -3:00] [Thread 1288] extDB3: SQL: Trace: Result: [1,[]]
+[02:40:39:551618 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[02:40:45:255944 -3:00] [Thread 4316] extDB3: Input from Server: 1:8843:UPDATE players SET civ_alive = '0' WHERE civ_alive = '1'
+[02:40:45:255944 -3:00] [Thread 4316] extDB3: Output to Server: 
+[02:40:45:255944 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: UPDATE players SET civ_alive = '0' WHERE civ_alive = '1'
+[02:40:45:324948 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[02:42:51:929190 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT COUNT(*) FROM houses WHERE owned='1'
+[02:42:51:929190 -3:00] [Thread 4316] extDB3: Output to Server: [2,"100"]
+[02:42:51:929190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:929190 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT COUNT(*) FROM houses WHERE owned='1'
+[02:42:51:929190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:929190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:929190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:929190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[[0]]]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Input from Server: 4:100
+[02:42:51:930190 -3:00] [Thread 4316] extDB3: Output to Server: [1,[[0]]]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT houses.id, houses.pid, houses.pos, players.name, houses.garage FROM houses INNER JOIN players WHERE houses.owned='1' AND houses.pid = players.pid LIMIT 0,10
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [2,"101"]
+[02:42:51:931190 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT houses.id, houses.pid, houses.pos, players.name, houses.garage FROM houses INNER JOIN players WHERE houses.owned='1' AND houses.pid = players.pid LIMIT 0,10
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 4:101
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 4:101
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 4:101
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 4:101
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 4:101
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 4:101
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 4:101
+[02:42:51:931190 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Input from Server: 4:101
+[02:42:51:931190 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT pid, name, cash, bankacc, adminlevel, donorlevel, med_licenses, mediclevel, med_gear, med_stats, playtime FROM players WHERE pid='76561198119999473'
+[02:42:54:471335 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT pid, name, cash, bankacc, adminlevel, donorlevel, med_licenses, mediclevel, med_gear, med_stats, playtime FROM players WHERE pid='76561198119999473'
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [2,"102"]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:471335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:472335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:42:54:473335 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[['76561198119999473','JasoN',999998016,1000000,5,0,"[]",0,"[]",'"[100,100,0]"','"[10,0,11]"']]]
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Input from Server: 4:102
+[02:42:54:473335 -3:00] [Thread 4316] extDB3: Output to Server: [1,[['76561198119999473','JasoN',999998016,1000000,5,0,"[]",0,"[]",'"[100,100,0]"','"[10,0,11]"']]]
+[02:44:05:804415 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT wantedName FROM wanted WHERE wantedID='76561198119999473'
+[02:44:05:804415 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT wantedName FROM wanted WHERE wantedID='76561198119999473'
+[02:44:05:804415 -3:00] [Thread 4316] extDB3: Output to Server: [2,"103"]
+[02:44:05:804415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:804415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:05:805415 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Input from Server: 4:103
+[02:44:05:805415 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE pid='76561198119999473' AND alive='1' AND active='0' AND side='med' AND type='Car'
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [2,"104"]
+[02:44:31:098862 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT id, side, classname, type, pid, alive, active, plate, color FROM vehicles WHERE pid='76561198119999473' AND alive='1' AND active='0' AND side='med' AND type='Car'
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:098862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:44:31:099862 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Input from Server: 4:104
+[02:44:31:099862 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]
+[02:45:15:613408 -3:00] [Thread 4316] extDB3: Input from Server: 1:8843:UPDATE players SET name='JasoN', cash='999998016', bankacc='1000000', med_licenses='"[[`license_med_mAir`,0]]"', med_gear='"[`U_B_HeliPilotCoveralls`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`],[],[],[`FirstAidKit`,`FirstAidKit`],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]"', med_stats='"[100,100,0]"', playtime='"[10,2,11]"' WHERE pid='76561198119999473'
+[02:45:15:613408 -3:00] [Thread 4316] extDB3: Output to Server: 
+[02:45:15:613408 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: UPDATE players SET name='JasoN', cash='999998016', bankacc='1000000', med_licenses='"[[`license_med_mAir`,0]]"', med_gear='"[`U_B_HeliPilotCoveralls`,``,``,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`],[],[],[`FirstAidKit`,`FirstAidKit`],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[]]"', med_stats='"[100,100,0]"', playtime='"[10,2,11]"' WHERE pid='76561198119999473'
+[02:45:15:681412 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[02:45:16:795476 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT pid, pos FROM containers WHERE pid='76561198119999473' AND owned='1'
+[02:45:16:795476 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT pid, pos FROM containers WHERE pid='76561198119999473' AND owned='1'
+[02:45:16:795476 -3:00] [Thread 4316] extDB3: Output to Server: [2,"105"]
+[02:45:16:795476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:795476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:795476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:795476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:795476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:795476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[02:45:16:796476 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Input from Server: 4:105
+[02:45:16:796476 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]
+[12:16:30:344810 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT pid, name, cash, bankacc, adminlevel, donorlevel, civ_licenses, arrested, civ_gear, civ_stats, civ_alive, civ_position, playtime FROM players WHERE pid='76561198180042750'
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [2,"106"]
+[12:16:30:345810 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT pid, name, cash, bankacc, adminlevel, donorlevel, civ_licenses, arrested, civ_gear, civ_stats, civ_alive, civ_position, playtime FROM players WHERE pid='76561198180042750'
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:345810 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:346811 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[['76561198180042750','Telhada',949950,40000,5,0,"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,1],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_metanfetamina`,0],[`license_civ_rebel`,0],[`license_civ_whiskey`,0],[`license_civ_cocacola`,0],[`license_civ_processor`,0],[`license_civ_motherboard`,0],[`license_civ_graphics`,0],[`license_civ_memory`,0],[`license_civ_gamingcomputer`,0],[`license_civ_ritalina`,0],[`license_civ_legalweed`,0],[`license_civ_whiskeyaged`,0]]",0,"[`U_C_Man_casual_6_F`,``,`B_Carryall_ghex_F`,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[`FirstAidKit`],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[[`pickaxe`,1],[`waterBottle`,5],[`apple`,12],[`tbacon`,4],[`toolkit`,3]]]",'"[50,20,0.00799368]"',0,'"[17368.1,17264.2,0.00145721]"','"[0,0,87]"']]]
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Input from Server: 4:106
+[12:16:30:346811 -3:00] [Thread 4316] extDB3: Output to Server: [1,[['76561198180042750','Telhada',949950,40000,5,0,"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,1],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_metanfetamina`,0],[`license_civ_rebel`,0],[`license_civ_whiskey`,0],[`license_civ_cocacola`,0],[`license_civ_processor`,0],[`license_civ_motherboard`,0],[`license_civ_graphics`,0],[`license_civ_memory`,0],[`license_civ_gamingcomputer`,0],[`license_civ_ritalina`,0],[`license_civ_legalweed`,0],[`license_civ_whiskeyaged`,0]]",0,"[`U_C_Man_casual_6_F`,``,`B_Carryall_ghex_F`,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[`FirstAidKit`],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[[`pickaxe`,1],[`waterBottle`,5],[`apple`,12],[`tbacon`,4],[`toolkit`,3]]]",'"[50,20,0.00799368]"',0,'"[17368.1,17264.2,0.00145721]"','"[0,0,87]"']]]
+[12:16:30:922843 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT pid, pos, classname, inventory, gear, dir, id FROM containers WHERE pid='76561198180042750' AND owned='1'
+[12:16:30:922843 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT pid, pos, classname, inventory, gear, dir, id FROM containers WHERE pid='76561198180042750' AND owned='1'
+[12:16:30:922843 -3:00] [Thread 4316] extDB3: Output to Server: [2,"107"]
+[12:16:30:922843 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:922843 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:922843 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:922843 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:922843 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:923844 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Input from Server: 4:107
+[12:16:30:923844 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT pid, pos FROM houses WHERE pid='76561198180042750' AND owned='1'
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [2,"108"]
+[12:16:30:924844 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT pid, pos FROM houses WHERE pid='76561198180042750' AND owned='1'
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:924844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:925844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:925844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:925844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:925844 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[12:16:30:925844 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:30:925844 -3:00] [Thread 4316] extDB3: Input from Server: 4:108
+[12:16:30:925844 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT id, owner, name, maxmembers, bank, members FROM gangs WHERE active='1' AND members LIKE '%76561198180042750%'
+[12:16:31:022849 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT id, owner, name, maxmembers, bank, members FROM gangs WHERE active='1' AND members LIKE '%76561198180042750%'
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Output to Server: [2,"109"]
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:022849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:31:023849 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Input from Server: 4:109
+[12:16:31:023849 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT wantedName FROM wanted WHERE wantedID='76561198180042750'
+[12:16:39:508335 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: SELECT wantedName FROM wanted WHERE wantedID='76561198180042750'
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [2,"110"]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:508335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:16:39:509335 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Input from Server: 4:110
+[12:16:39:509335 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]
+[12:34:06:337210 -3:00] [Thread 4316] extDB3: Input from Server: 1:8843:UPDATE players SET name='Telhada', cash='949950', bankacc='45000', civ_licenses='"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,1],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_metanfetamina`,0],[`license_civ_rebel`,0],[`license_civ_whiskey`,0],[`license_civ_cocacola`,0],[`license_civ_processor`,0],[`license_civ_motherboard`,0],[`license_civ_graphics`,0],[`license_civ_memory`,0],[`license_civ_gamingcomputer`,0],[`license_civ_ritalina`,0],[`license_civ_legalweed`,0],[`license_civ_whiskeyaged`,0]]"', civ_gear='"[`U_C_Man_casual_6_F`,``,`B_Carryall_ghex_F`,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[`FirstAidKit`],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[[`pickaxe`,1],[`waterBottle`,5],[`apple`,12],[`tbacon`,4],[`toolkit`,3]]]"', arrested='0', civ_stats='"[100,100,0]"', civ_alive='1', civ_position='"[9812.91,15032.4,0.00323486]"', playtime='"[0,0,105]"' WHERE pid='76561198180042750'
+[12:34:06:337210 -3:00] [Thread 4316] extDB3: Output to Server: 
+[12:34:06:337210 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: UPDATE players SET name='Telhada', cash='949950', bankacc='45000', civ_licenses='"[[`license_civ_driver`,0],[`license_civ_boat`,0],[`license_civ_pilot`,0],[`license_civ_trucking`,0],[`license_civ_gun`,0],[`license_civ_dive`,0],[`license_civ_home`,0],[`license_civ_oil`,0],[`license_civ_diamond`,1],[`license_civ_salt`,0],[`license_civ_sand`,0],[`license_civ_iron`,0],[`license_civ_copper`,0],[`license_civ_cement`,0],[`license_civ_medmarijuana`,0],[`license_civ_cocaine`,0],[`license_civ_heroin`,0],[`license_civ_marijuana`,0],[`license_civ_metanfetamina`,0],[`license_civ_rebel`,0],[`license_civ_whiskey`,0],[`license_civ_cocacola`,0],[`license_civ_processor`,0],[`license_civ_motherboard`,0],[`license_civ_graphics`,0],[`license_civ_memory`,0],[`license_civ_gamingcomputer`,0],[`license_civ_ritalina`,0],[`license_civ_legalweed`,0],[`license_civ_whiskeyaged`,0]]"', civ_gear='"[`U_C_Man_casual_6_F`,``,`B_Carryall_ghex_F`,``,``,[`ItemMap`,`ItemCompass`,`ItemWatch`,`ItemGPS`,`NVGoggles`,`Binocular`],``,``,[`FirstAidKit`],[],[],[],[],[],[``,``,``,``],[``,``,``,``],[[`pickaxe`,1],[`waterBottle`,5],[`apple`,12],[`tbacon`,4],[`toolkit`,3]]]"', arrested='0', civ_stats='"[100,100,0]"', civ_alive='1', civ_position='"[9812.91,15032.4,0.00323486]"', playtime='"[0,0,105]"' WHERE pid='76561198180042750'
+[12:34:06:406214 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Input from Server: 1:8843:UPDATE players SET civ_alive='1', civ_position='"[9812.91,15032.4,0.00323486]"' WHERE pid='76561198180042750'
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Output to Server: 
+[12:34:07:337267 -3:00] [Thread 3968] extDB3: SQL: Trace: Input: UPDATE players SET civ_alive='1', civ_position='"[9812.91,15032.4,0.00323486]"' WHERE pid='76561198180042750'
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Input from Server: 2:8843:SELECT pid, pos FROM containers WHERE pid='76561198180042750' AND owned='1'
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Output to Server: [2,"111"]
+[12:34:07:337267 -3:00] [Thread 1288] extDB3: SQL: Trace: Input: SELECT pid, pos FROM containers WHERE pid='76561198180042750' AND owned='1'
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:337267 -3:00] [Thread 3968] extDB3: SQL: Trace: Result: [1,[]]
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:337267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Output to Server: [3]
+[12:34:07:338267 -3:00] [Thread 1288] extDB3: SQL: Trace: Result: [1,[]]
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Input from Server: 4:111
+[12:34:07:338267 -3:00] [Thread 4316] extDB3: Output to Server: [1,[]]

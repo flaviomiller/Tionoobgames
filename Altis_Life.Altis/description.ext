@@ -1,0 +1,327 @@
+//--- Control Chat - Format: {channelID<number>, disableChat<bool>, disableVoice<bool>}
+disableChannels[] = {
+	{0, true, true}, //--- Global Chat
+	{1, true, true}, //--- Side Chat
+	{2, true, true}, //--- Command Chat
+	{3, false, false}, //--- Group Chat
+	{4, false, false}, //--- Vehicle Chat
+	{5, false, false}, //--- Direct Chat
+	{6, true, true},	//--- System Chat
+	{7, false, true}  //--- Civ Side Chat
+};
+overviewText = "$STR_MISC_overviewText";    // Text to be displayed below the overviewPicture on the mission selection screen when the mission is available to play.
+
+#include "config\Config_SpyGlass.hpp"
+#include "CfgRemoteExec.hpp"
+#include "dialog\MasterHandler.hpp"
+#include "config\Config_Master.hpp"
+#include "infiSTAR_AdminMenu.hpp"
+
+class CfgServer {
+    DatabaseName = "altislife"; //Config name that'll be grep in the extdb-conf.ini. Default: [altislife]
+    DebugMode = 1; //Enable many server/hc debugging logs. Default: 0 (1 = Enabled / 0 = Disabled)
+    HeadlessSupport = 1; //Enable/Disable Headless client support. Default: 1 (1 = Enabled / 0 = Disabled)
+    /*
+    Enabled: When HeadlessSupport is set to 1 (enabled), the server will run without fault when no Headless Client is connected. However, it will support the Headless Client if you choose to connect one.
+    Disabled: If HeadlessSupport is set to 0 (disabled), the connection of a Headless Client will make no difference. This option will increase server performance a TINY but negligible amount.
+    */
+};
+
+showHUD[] = {
+    true,    // Scripted HUD (same as showHUD command)
+    true,    // Vehicle + soldier info
+    false,    // Vehicle radar [HIDDEN]
+    false,    // Vehicle compass [HIDDEN]
+    false,    // Tank direction indicator
+    false,    // Commanding menu
+    true,    // Group Bar
+    true,    // HUD Weapon Cursors
+    true    // HUD Squad Radar
+};
+
+class RscTitles {
+    #include "dialog\progress.hpp"
+    #include "dialog\statusBar.hpp" 
+    #include "dialog\hud_nameTags.hpp"
+    #include "dialog\hud_stats.hpp"
+};
+
+class CfgFunctions {
+    #include "Functions.hpp"
+};
+
+class CfgSounds {
+    sounds[] = {};
+    class sirenLong {
+        name = "sirenLong";
+        sound[] = {"\sounds\sirenLong.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+	 class sirenPers {
+        name = "sirenpers";
+        sound[] = {"\sounds\sirenPers.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+    class medicSiren {
+        name = "medicSiren";
+        sound[] = {"\sounds\medicSiren.ogg", 1.0, 1};
+        titles[] = {};
+    };
+	
+    class Welcome {
+        name = "Welcome";
+        sound[] = {"\sounds\Welcome.ogg", 1, 1};
+        titles[] = {};
+    };
+
+		class robberyalarm
+    {
+        name = "robberyalarm";
+        sound[] = {"\sounds\robberyalarm.ogg",2.0, 1};
+        titles[] = {};
+    };
+	
+    class tazerSound {
+        name = "tazerSound";
+        sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+        titles[] = {};
+    };
+
+	class attachceinture
+	{
+		name = "attachceinture";
+		sound[] = {"\sounds\attachceinture.ogg", 1, 1};
+		titles[] = {};
+	};
+	
+	class detachceinture
+	{
+		name = "detachceinture";
+		sound[] = {"\sounds\detachceinture.ogg", 1, 1};
+		titles[] = {};
+	};
+	
+    class flashbang {
+        name = "flashbang";
+        sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+		class Yelp {
+		name = "yelp";
+		sound[] = {"\sounds\Yelp.ogg", 1.0, 1};
+		titles[] = {};		
+		};
+	
+    class mining {
+        name = "mining";
+        sound[] = {"\sounds\mining.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+		class coca
+	{
+		name= "coca";
+		sound[] = {"sounds\coca.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class mari
+	{
+		name= "mari";
+		sound[] = {"sounds\mari.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
+    class harvest {
+        name = "harvest";
+        sound[] = {"\sounds\harvest.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+    class lockCarSound {
+        name = "lockCarSound";
+        sound[] = {"\sounds\carLock.ogg", 0.25, 1};
+        titles[] = {};
+    };
+	
+    class cuff {
+        name = "cuff";
+        sound[] = {"\sounds\cuff.ogg", 0.25, 1};
+        titles[] = {};
+    };
+	
+		class Intro
+    {
+        name = "Intro";
+		sound[] = {"\sounds\Intro.ogg", 0.30, 1};
+		titles[] = {};
+	};
+
+	class Intro2
+    {
+        name = "Intro2";
+		sound[] = {"\sounds\Intro2.ogg", 0.30, 1};
+		titles[] = {};
+	};
+
+	class Intro3
+    {
+        name = "Intro3";
+		sound[] = {"\sounds\Intro3.ogg", 0.30, 1};
+		titles[] = {};
+	};
+
+	class Intro4
+    {
+        name = "Intro4";
+		sound[] = {"\sounds\Intro4.ogg", 0.30, 1};
+		titles[] = {};
+	};
+	
+    class CarAlarm {
+        name = "CarAlarm";
+        sound[] = {"\sounds\caralarm.ogg", 1.0, 1};
+        titles[] = {};
+    };
+
+    class unlockCarSound {
+        name = "unlockCarSound";
+        sound[] = {"\sounds\carUnlock.ogg", 0.25, 1};
+        titles[] = {};
+    };
+
+	class fl_start_1
+	{
+		name = "fl_start_1";
+		sound[] = {"\sound\fl_start_1.ogg", 1, 1};
+		titles[] = {1, ""};
+	};	
+	class fl_burn_1
+	{
+		name = "fl_burn_1";
+		sound[] = {"\sound\fl_burn_1.ogg", 1, 1};
+		titles[] = {1, ""};
+	};
+	class fl_start_2
+	{
+		name = "fl_start_2";
+		sound[] = {"\sound\fl_start_2.ogg", 1, 1};
+		titles[] = {1, ""};
+	};	
+	class fl_burn_2
+	{
+		name = "fl_burn_2";
+		sound[] = {"\sound\fl_burn_2.ogg", 1, 1};
+		titles[] = {1, ""};
+	};
+	class fl_start_3
+	{
+		name = "fl_start_3";
+		sound[] = {"\sound\fl_start_3.ogg", 1, 1};
+		titles[] = {1, ""};
+	};	
+	class fl_burn_3
+	{
+		name = "fl_burn_3";
+		sound[] = {"\sound\fl_burn_3.ogg", 1, 1};
+		titles[] = {1, ""};
+	};		
+};
+
+class CfgDebriefing {
+    class NotWhitelisted {
+        title = "$STR_NotWhitelisted_Title";
+        subtitle = "$STR_NotWhitelisted_SubTitle";
+        description = "$STR_NotWhitelisted_Descript";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+
+    class Blacklisted {
+        title = "$STR_Blacklisted_Title";
+        subtitle = "$STR_Blacklisted_SubTitle";
+        description = "$STR_Blacklisted_Descript";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+
+    class SpyGlass {
+        title = "$STR_SpyDetect_Title";
+        subTitle = "$STR_SpyDetect_SubTitle";
+        description = "$STR_SpyDetect_Descript";
+        pictureBackground = "";
+        picture = "";
+        pictureColor[] = {0,0.3,0.6,1};
+    };
+};
+
+class CfgNotifications {
+    class MedicalRequestEmerg {
+        title = "$STR_MedicalRequestEmerg_Title";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+        description = "%1";
+        duration = 5;
+        priority = 7;
+    };
+
+    class DeliveryAssigned {
+        title = "$STR_DeliveryAssigned_Title";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
+        description = "%1";
+        duration = 10;
+        priority = 7;
+    };
+
+    class DeliveryFailed {
+        title = "$STR_DeliveryFailed_Title";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
+        description = "%1";
+        duration = 7;
+        priority = 7;
+    };
+
+    class DeliverySucceeded {
+        title = "$STR_DeliverySucceeded_Title";
+        iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
+        description = "%1";
+        duration = 6;
+        priority = 6;
+    };
+
+    class TextMessage {
+        title = "$STR_TextMessage_Title";
+        iconPicture = "icons\ico_messageNew.paa";
+        description = "%1";
+        duration = 10;
+        priority = 6;
+    };
+
+    class PoliceDispatch {
+        title = "$STR_PoliceDispatch_Title";
+        iconPicture = "icons\ico_messagePolice.paa";
+        description = "%1";
+        duration = 10;
+        priority = 6;
+    };
+
+    class AdminDispatch {
+        title = "$STR_AdminDispatch_Title";
+        iconPicture = "icons\ico_messageAdmin.paa";
+        description = "%1";
+        duration = 10;
+        priority = 6;
+    };
+
+    class AdminMessage {
+        title = "$STR_AdminMessage_Title";
+        iconPicture = "icons\ico_messageAdmin.paa";
+        description = "%1";
+        duration = 10;
+        priority = 5;
+    };
+};

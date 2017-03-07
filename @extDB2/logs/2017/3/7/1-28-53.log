@@ -1,0 +1,26 @@
+
+extDB3: https://bitbucket.org/torndeco/extdb3/wiki/Home
+extDB3: Version: 1.022
+extDB3: Windows Debug Version
+
+Message: All development for extDB3 is done on a Linux Dedicated Server
+Message: If you would like to Donate to extDB3 Development
+Message: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=2SUEFTGABTAM2
+Message: Also leave a message if there is any particular feature you would like to see added.
+Message: Thanks for all the people that have donated.
+Message: Torndeco: 18/05/15
+
+
+extDB3: Found extdb3-conf.ini
+extDB3: Detected 4 Cores, Setting up 4 Worker Threads
+extDB3: ...
+extDB3: ...
+extDB3: ...
+extDB3: ...
+
+
+[01:28:53:959814 -3:00] [Thread 16724] extDB3: Input from Server: 9:VERSION
+[01:28:53:960311 -3:00] [Thread 16724] extDB3: Output to Server: 1.022
+[01:29:28:463487 -3:00] [Thread 16724] extDB3: Input from Server: 9:ADD_DATABASE:altislife
+[01:29:30:078886 -3:00] [Thread 16724] extDB3: MariaDBConnectorException: altislife: Can't connect to MySQL server on '186.208.124.198' (0)
+[01:29:30:078935 -3:00] [Thread 16724] extDB3: Output to Server: [0,"Database Connection Error"]
