@@ -71,7 +71,6 @@ class WeaponShops {
             { "Chemlight_green", "", 10, -1, "" },
             { "Chemlight_blue", "", 10, -1, "" },
             { "hgun_Pistol_heavy_02_F", "ACP .45", 9850, -1 },
-            { "16Rnd_9x21_Mag", "", 50, -1 },
             { "hgun_Rook40_F", "Rook 9mm", 6500, -1 },
             { "hgun_ACPC2_F", "ACP .45", 11500, 5000 },
             { "arifle_TRG20_F", "TRG 5.56mm", 50000, -1 },
@@ -92,6 +91,7 @@ class WeaponShops {
         };
         mags[] = {
 			{ "6Rnd_45ACP_Cylinder", "Munição 9rnd .45", 100 },
+			{ "16Rnd_9x21_Mag", "", 50, -1 },
 			{ "30Rnd_9x21_Mag", "Munição 30rnd 9mm", 100 },
 			{ "11Rnd_45ACP_Mag", "Munição 11rnd .45", 100 },
 			{ "10Rnd_762x54_Mag", "Munição 10rnd 7.62mm", 400 },
