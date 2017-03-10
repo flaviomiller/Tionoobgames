@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=142;
+		nextID=144;
 	};
 	class Camera
 	{
-		pos[]={22689.539,25,13716.33};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
-		aside[]={0.99999994,0,-0};
+		pos[]={3630.9409,125.19533,13354.186};
+		dir[]={-0.0069862371,-0.99994999,0.0071545849};
+		up[]={-0.69860417,0.00999978,0.71543849};
+		aside[]={0.71547425,0,0.69863909};
 	};
 };
 binarizationWanted=0;
@@ -396,6 +396,24 @@ class CustomAttributes
 		name="Multiplayer";
 		class Attribute0
 		{
+			property="RespawnTemplates";
+			expression="true";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"ARRAY"
+						};
+					};
+				};
+			};
+		};
+		class Attribute1
+		{
 			property="RespawnButton";
 			expression="true";
 			class Value
@@ -410,24 +428,6 @@ class CustomAttributes
 						};
 					};
 					value=1;
-				};
-			};
-		};
-		class Attribute1
-		{
-			property="RespawnTemplates";
-			expression="true";
-			class Value
-			{
-				class data
-				{
-					class type
-					{
-						type[]=
-						{
-							"ARRAY"
-						};
-					};
 				};
 			};
 		};
@@ -485,7 +485,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=3472;
+		items=3474;
 		class Item0
 		{
 			dataType="Marker";
@@ -901,11 +901,12 @@ class Mission
 		class Item41
 		{
 			dataType="Marker";
-			position[]={3649.4426,7.00559,13384.339};
-			name="jail_release";
+			position[]={3649.4431,-4.9946633e-014,13384.339};
+			name="air_g_6";
 			type="Empty";
-			angle=190.78464;
+			angle=190.78497;
 			id=62;
+			atlOffset=-7.0055962;
 		};
 		class Item42
 		{
@@ -1160,14 +1161,13 @@ class Mission
 		class Item66
 		{
 			dataType="Marker";
-			position[]={15514.338,-1.4629412e-035,15767.081};
+			position[]={14327.465,18.488745,17427.523};
 			name="Dealer_1_4";
-			text="Traficante Beira Mar";
+			text="@STR_MAR_Drug_Dealer";
 			type="mil_dot";
 			colorName="ColorOrange";
-			angle=302.06696;
+			angle=302.06683;
 			id=88;
-			atlOffset=10.254632;
 		};
 		class Item67
 		{
@@ -11926,7 +11926,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pyrgos District""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_car_3""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\Roupas\Policiais\cop_SP.jpg""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_3"",""cop"",""APD - Pyrgos District""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_car_3""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\Roupas\Policiais\cop_RJ.jpg""];";
 						disableSimulation=1;
 					};
 					id=1001;
@@ -17491,7 +17491,7 @@ class Mission
 			text="Envelhecimento de Bebidas";
 			type="mil_dot";
 			colorName="ColorGUER";
-			angle=267.20468;
+			angle=267.20465;
 			id=1394;
 			atlOffset=-42.313019;
 		};
@@ -17523,7 +17523,7 @@ class Mission
 			};
 			id=1396;
 			type="WaterPump_01_sand_F";
-			atlOffset=1.3360977;
+			atlOffset=1.3342133;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -56465,14 +56465,13 @@ class Mission
 		class Item1367
 		{
 			dataType="Marker";
-			position[]={22689.539,-8.3812105e-021,13741.33};
+			position[]={22689.541,4.1249728,13741.33};
 			name="Dealer_1_3";
-			text="Traficante Escobar";
+			text="@STR_MAR_Drug_Dealer";
 			type="mil_dot";
 			colorName="ColorOrange";
 			alpha=0;
 			id=2749;
-			atlOffset=-4.124929;
 		};
 		class Item1368
 		{
@@ -57648,7 +57647,7 @@ class Mission
 			position[]={14606.424,17.839428,16879.354};
 			name="car_g_6";
 			type="Empty";
-			angle=228.18477;
+			angle=228.18475;
 			id=2984;
 		};
 		class Item1404
@@ -78472,7 +78471,7 @@ class Mission
 				position[]={24336.355,7.8880734,18986.377};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 				createAsSimpleObject=1;
@@ -78480,7 +78479,6 @@ class Mission
 			};
 			id=3757;
 			type="Land_AncientPillar_F";
-			atlOffset=0.98854804;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -84583,7 +84581,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={24412.857,-2.6544257e-019,18975.201};
-			name="Autodromo Internacional de Altis";
+			name="Autodromo Internacional de RockInAltis";
 			text="Autodromo Internacional de Altis";
 			type="c_car";
 			colorName="ColorGUER";
@@ -88003,7 +88001,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this addAction[localize""STR_Shops_Premium"",life_fnc_weaponShopMenu,""PremiumCop""]; this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this setObjectTextureGlobal [0,""textures\Roupas\Policiais\cop_SP.jpg""];";
+						init="this enableSimulation false; this addAction[localize""STR_Shops_Premium"",life_fnc_weaponShopMenu,""PremiumCop""]; this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this setObjectTextureGlobal [0,""textures\Roupas\Policiais\cop_RJ.jpg""];";
 						name="h1_6";
 						disableSimulation=1;
 					};
@@ -90656,7 +90654,7 @@ class Mission
 		class Item2233
 		{
 			dataType="Marker";
-			position[]={3653.5669,7.0574541,13389.075};
+			position[]={3654.4509,7.1039629,13390.216};
 			name="ziv_land";
 			text=" Pista de pouso";
 			type="c_air";
@@ -106040,6 +106038,7 @@ class Mission
 				angles[]={0.0072670453,6.229003,6.277009};
 			};
 			side="Empty";
+			flags=4;
 			class Attributes
 			{
 				skill=0.60000002;
@@ -106049,7 +106048,7 @@ class Mission
 			};
 			id=6522;
 			type="Land_Laptop_unfolded_F";
-			atlOffset=0.82198381;
+			atlOffset=4.2915344e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -110152,19 +110151,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3739.0986,12.735518,13268.196};
-						angles[]={0.043971907,0.90683329,6.2618537};
+						position[]={3612.8689,6.4141932,13366.408};
+						angles[]={0,2.301461,0};
 					};
 					side="Civilian";
 					flags=4;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[""Garagem"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Procurando veículos....""];   life_garage_sp = ""car_g_1"";  }];  this addAction[""Guardar veículo na garagem"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Car"";  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""car_g_9""; }]; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 					};
 					id=7075;
 					type="C_man_1";
-					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -110186,7 +110184,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.01;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -110208,19 +110225,19 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3654.5359,7.1103649,13390.449};
-						angles[]={6.276526,3.8481021,0.043970551};
+						position[]={3654.5359,7.1103702,13390.45};
+						angles[]={6.2765183,3.8481019,0.043964844};
 					};
 					side="Civilian";
 					flags=6;
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[""Garagem"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;  life_garage_type = ""Air""; createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Procurando veículos....""];   life_garage_sp = ""air_g_11"",""air_g_11_1"";  }]; this addAction[""Guardar veículo na garagem"",  {   private[""_nearVehicle""];   _nearVehicle = nearestObjects[(getPos (_this select 0)),[""Car"",""Ship"",""Air""],35] select 0;   if(isNil ""_nearVehicle"") exitWith {hint ""Não há um veículo próximo a este NPC."";};   [[_nearVehicle,false,(_this select 1)],""TON_fnc_vehicleStore"",false,false] spawn life_fnc_MP;   hint ""O servidor está tentando armazenar o veículo por favor aguarde ...."";   life_garage_store = true;  },"""",0,false,false,"""",'!life_garage_store'];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Air"",player] remoteExecCall [""TON_fnc_getVehicles"",2];}; life_garage_type = ""Air""; createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""air_g_6"",""air_g_11"",""air_g_11_1""; }];  this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 					};
 					id=7079;
 					type="C_man_1";
-					atlOffset=4.7683716e-007;
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -110242,7 +110259,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 			};
@@ -110250,7 +110286,7 @@ class Mission
 			{
 			};
 			id=7078;
-			atlOffset=4.7683716e-007;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item2710
 		{
@@ -110571,7 +110607,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23744.924,5.4711504,16221.639};
-			angle=0.80629325;
+			angle=0.80629319;
 			class Attributes
 			{
 				name="Autobahn_1_1_2_2_1";
@@ -126656,13 +126692,13 @@ class Mission
 		class Item3253
 		{
 			dataType="Marker";
-			position[]={16267.656,-444.37927,19836.502};
+			position[]={16268.14,176708.19,19836.975};
 			name="marker_272";
 			text="Campo de Maconha";
 			type="mil_dot";
 			colorName="ColorEAST";
 			id=8135;
-			atlOffset=-458.89987;
+			atlOffset=176693.66;
 		};
 		class Item3254
 		{
@@ -127719,7 +127755,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={23605.576,14.132607,19946.531};
-			angle=0.96593899;
+			angle=0.96593893;
 			class Attributes
 			{
 				onActivation="gate2_2 animate [""Door_1_rot"", 1]";
@@ -130718,7 +130754,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_5"",""cop"",""APD - Highway Patrol""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_car_5"", ""cop_car_6"", ""cop_car_7""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\Roupas\Policiais\cop_SP.jpg""];";
+						init="this enableSimulation false; this allowDamage false; this addAction[localize""STR_MAR_W_E_Vehicle Shop"",life_fnc_vehicleShopMenu,[""cop_car"",west,""cop_car_5"",""cop"",""APD - Highway Patrol""]]; this addAction[localize""STR_Garage_Title"",  {   if (life_HC_isActive) then {    [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""HC_fnc_getVehicles"",HC_Life]; } else { [getPlayerUID player,playerSide,""Car"",player] remoteExecCall [""TON_fnc_getVehicles"",2];};  createDialog ""Life_impound_menu"";  disableSerialization;  ctrlSetText[2802,""Fetching Vehicles....""];  life_garage_sp = ""cop_car_5"", ""cop_car_6"", ""cop_car_7""; life_garage_type = ""Car""; },"""",0,false,false,"""",'playerSide isEqualTo west']; this addAction[localize""STR_MAR_Store_vehicle_in_Garage"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store']; this setObjectTextureGlobal [0,""textures\Roupas\Policiais\cop_RJ.jpg""];";
 						disableSimulation=1;
 					};
 					id=8369;
@@ -130802,7 +130838,7 @@ class Mission
 					class Attributes
 					{
 						skill=0.60000002;
-						init="this enableSimulation false; this addAction[localize""STR_Shops_Premium"",life_fnc_weaponShopMenu,""PremiumCop""]; this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this setObjectTextureGlobal [0,""textures\Roupas\Policiais\cop_SP.jpg""];";
+						init="this enableSimulation false; this addAction[localize""STR_Shops_Premium"",life_fnc_weaponShopMenu,""PremiumCop""]; this addAction[localize""STR_MAR_Cop_Item_Shop"",life_fnc_virt_menu,""cop""]; this allowDamage false; this addAction[localize""STR_MAR_Cop_Clothing_Shop"",life_fnc_clothingMenu,""cop""]; this addAction[localize""STR_MAR_Cop_Weapon_Shop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cAir"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cAir"",0,false,false,"""",' !license_cop_cAir && playerSide isEqualTo west ']; this addAction[format [""%1 ($%2)"",localize (getText(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""displayName"")), [(getNumber(missionConfigFile >> ""Licenses"" >> ""cg"" >> ""price""))] call life_fnc_numberText],life_fnc_buyLicense,""cg"",0,false,false,"""",' !license_cop_cg && playerSide isEqualTo west ']; this setObjectTextureGlobal [0,""textures\Roupas\Policiais\cop_RJ.jpg""];";
 						name="h1_7";
 						disableSimulation=1;
 					};
@@ -131379,18 +131415,33 @@ class Mission
 		class Item3471
 		{
 			dataType="Marker";
-			position[]={16267.659,0,19836.531};
-			name="weed_1";
-			markerType="ELLIPSE";
+			position[]={15520.784,-2.6095623e-017,15765.9};
+			name="Dealer_1_8";
+			text="Traficante Nandinho Beira Mar";
+			type="mil_dot";
+			colorName="ColorOrange";
+			angle=292.11401;
+			id=8411;
+			atlOffset=10.153935;
+		};
+		class Item3472
+		{
+			dataType="Marker";
+			position[]={3621.8711,-1.8997079e-028,13359.602};
+			name="car_g_9";
 			type="Empty";
-			colorName="ColorRed";
-			alpha=0.80328578;
-			fillName="DiagGrid";
-			a=50;
-			b=50;
-			angle=233.98099;
+			angle=136.29401;
+			id=8412;
+			atlOffset=-6.9683051;
+		};
+		class Item3473
+		{
+			dataType="Marker";
+			position[]={3612.814,6.4079504,13366.308};
+			name="civ_gar_3";
+			text="Garagem";
+			type="o_service";
 			id=8413;
-			atlOffset=-14.519721;
 		};
 	};
 };
